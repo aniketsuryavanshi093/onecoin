@@ -1,0 +1,104 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+}
+
+.token {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 50px;
+  transition: all 0.2s;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.nav-connect-wallet-btn {
+  max-width: 180px;
+  height: 44px;
+  cursor: pointer;
+}
+.connect-wallet-dropdown {
+  max-width: 180px;
+  width: 100%;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown-menu {
+  background-color: #000;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.connect-wallet-dropdown .dropdown-menu a,
+.connect-wallet-dropdown .dropdown-menu button,
+.profile-dropdown .dropdown-menu .dropdown-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+.connect-wallet-dropdown .dropdown-menu a:last-child,
+.connect-wallet-dropdown .dropdown-menu button:last-child,
+.bb-none {
+  border-bottom: none !important;
+}
+.connect-wallet-dropdown .dropdown-menu a p,
+.connect-wallet-dropdown .dropdown-menu button p,
+.profile-dropdown .dropdown-menu .dropdown-item p {
+  padding: 15px 20px;
+}
+
+.wallet-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(139.11deg, #0013be 6.67%, #0075ff 99.81%);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 21px;
+  cursor: pointer;
+}
+.connect-wallet-dropdown .dropdown-menu .dropdown-item:focus,
+.dropdown-item:hover,
+.profile-dropdown .dropdown-menu .dropdown-item:focus,
+.dropdown-item:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+.connect-wallet-dropdown .dropdown-menu a span,
+.profile-dropdown .dropdown-menu .dropdown-item span,
+.connect-wallet-dropdown .dropdown-menu button span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  margin-left: 25px;
+}
+.WrapperDiv {
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+.connect-wallet-dropdown .dropdown-menu.show {
+  max-width: 227px;
+  left: -60px !important;
+  width: 100%;
+  background: #000000;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.logout {
+  margin-left: 10px;
+}

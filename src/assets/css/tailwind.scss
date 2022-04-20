@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.font-size-16{
+    font-size: 16px;
+}
+.font-size-14{
+    font-size: 14px;
+}
+.font-size-13{
+    font-size: 13px;
+}
+@media(min-width: 1024px){
+    .w-37{
+        width: 37.5% !important;
+    }
+}
+.tree-view{
+    li{
+        @apply font-semibold font-size-13;
+        &>ul{
+            @apply pl-8;  
+            li{
+                @apply pt-3;
+            }
+        }
+    }
+}
