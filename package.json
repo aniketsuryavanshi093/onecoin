@@ -17,19 +17,14 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "eslint": "^6.8.0",
-    "eslint-scope": "^7.1.1",
-    "eslint-visitor-keys": "^3.3.0",
     "i": "^0.3.7",
     "npm": "^8.6.0",
     "react": "16.11.0",
     "react-bootstrap": "^1.6.4",
     "react-dom": "16.11.0",
-    "react-dropdown": "^1.9.2",
     "react-modal": "^3.14.4",
     "react-redux": "^7.2.3",
-    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-router-redux": "^4.0.8",
     "react-scripts": "3.2.0",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.9",
@@ -41,13 +36,9 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "@babel/plugin-proposal-optional-chaining": "^7.13.12",
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-react": "^7.13.13",
-    "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",
-    "sass": "^1.49.10",
-    "sass-loader": "^12.6.0",
     "tailwindcss": "^3.0.23"
   },
   "scripts": {
@@ -55,7 +46,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy" : "aws s3 sync build/ s3://onecoin-bucket-dev"
+    "deploy": "aws s3 sync build/ s3://onecoin-bucket-dev"
   },
   "browserslist": {
     "production": [
